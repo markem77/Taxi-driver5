@@ -1,0 +1,81 @@
+
+
+.Normheader_cont{
+    margin-top:50px;
+    width:100%;
+    height:300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap:16px;
+}
+
+.Normheader_cont h1{
+    margin-top:15px;
+    font-size:50px;
+}
+
+
+.Normlink{
+    display: flex;
+    width:60%;
+    justify-content: space-around;
+    gap:7px;
+    font-size:16px;
+    overflow-x: auto; /* Activer le défilement horizontal */
+    scrollbar-width: none; /* Masquer la scrollbar sur Firefox */
+}
+
+.Normlink::-webkit-scrollbar {
+    display: none; /* Masquer la scrollbar sur Webkit (Chrome, Safari, etc.) */
+  }
+
+.Normlink a{
+    padding:12px;
+    border-radius:23px;
+    background-color:#f0f3fa;
+    color:#000;
+}
+
+
+.Normlink a:hover{
+    background-color: #e0e3eb;
+    cursor:pointer;
+}
+
+
+@media (max-width: 920px){
+    .Normheader_cont h1{
+        font-size:39px;
+    }
+
+    .Normlink{
+        width:90%;
+    }
+
+    .Normheader_cont{
+        height:170px;
+    }
+}
+
+@media (max-width: 770px){
+    .Normheader_cont h1{
+        font-size:32px;
+        text-align:center;
+        white-space: nowrap;
+    }
+}
+
+@media (max-width: 770px){
+    .Normheader_cont h1{
+        font-size:25px;
+    }
+}
+
+@media (max-width: 575px){
+    .Normlink a{
+        padding:8px;
+        white-space: nowrap;
+    }
+}

@@ -1,0 +1,150 @@
+
+  .rider1-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 500px;
+    background-color: #ffffff;
+    padding: 20px;
+    position: relative;
+    width:100%;
+    margin:12px auto;
+  }
+  
+  .rider1-content {
+    display: flex;
+    max-width: 1200px;
+    width: 80%;
+    justify-content: space-between;
+    align-items: center;
+    height:450px;
+  }
+  
+  .text-section {
+    width: 40%;
+    margin-bottom: 20px;
+  }
+  
+  .text-section h3 {
+    color: red;
+    font-size: 16px;
+    margin-bottom: 5px;
+  }
+  
+  .text-section h1 {
+    font-size: 48px;
+    margin: 0 0 20px 0;
+  }
+  
+  .text-section p {
+    color: #666;
+    font-size: 14px;
+    margin-bottom: 20px;
+  }
+  
+  .steps {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 20px 0;
+  }
+  
+  .steps li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  .steps li span {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    background-color: red;
+    color: white;
+    font-weight: bold;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 10px;
+  }
+  
+  .advert-button {
+    background-color: red;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 14px;
+  }
+  
+  .advert-button:hover {
+    background-color: #7f0000;
+  }
+
+  .image-section{
+    height:100%;
+    width:48%;
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+    padding: 0;
+  }
+
+
+  .image-section img {
+    width:80%;  
+    height:100%;
+    object-fit: contain;
+    z-index:2;
+    position: relative;
+    margin: 0;
+  }
+  
+
+  @media (max-width: 922px){
+    .rider1-content{
+      width:90%;
+    }
+  }
+
+  @media (max-width: 774px){
+    .rider1-container{
+      height:auto;
+    }
+
+    .rider1-content{
+      display: flex;
+      flex-direction: column;
+      height:auto;
+    }
+
+    .text-section{
+      width:95%;
+    }
+
+    .text-section h1{
+      font-size: 30px;
+    }
+
+    .image-section{
+      width:65%;
+    }
+
+    .image-section img{
+      width:97%;
+    }
+  }
+
+  @media (max-width:516px){
+    .rider1-container{
+      padding:5px;
+    }
+
+    .rider1-content{
+      width:98%;
+    }
+
+    .image-section{
+      width:85%;
+    }
+  }

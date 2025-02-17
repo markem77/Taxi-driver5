@@ -1,0 +1,82 @@
+.how-to-register {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #f8f8f4;
+  }
+  
+  .how-to-register h2 {
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .description {
+    max-width: 600px;
+    margin: 0 auto 30px;
+    color: #666;
+  }
+  
+  .steps-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+  }
+  
+  .step {
+    text-align: center;
+    max-width: 250px;
+  }
+  
+  .icon-container {
+    width: 80px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    margin: 0 auto 15px;
+  }
+  
+  .gray-bg {
+    background-color: #dcded8;
+  }
+  
+
+  .icon-container .icon {
+    font-size: 57px;
+    color:#91301b;
+  }
+  
+  h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  
+  .step p {
+    font-size: 14px;
+    color: #666;
+  }
+  
+  .dashed-line {
+    width: 60px;
+    height: 2px;
+    border-top: 2px dashed #666;
+  }
+  
+  @media (max-width: 774px){
+    .dashed-line{
+        display:none;
+    }
+    .steps-container{
+        display:grid;
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    }
+  }
+
+  @media (max-width: 480px){
+    .steps-container{
+        justify-items: center;
+    }
+        
+  }

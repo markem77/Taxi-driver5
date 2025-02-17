@@ -1,0 +1,112 @@
+
+   .testimonials-container {
+    background-color: white;
+    border-radius: 10px;
+    width:100%;
+    padding: 40px;
+    text-align: center;
+  }
+
+
+  .main-testimonials{
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+  }
+
+
+  .testimonials-container h2 {
+    color: #1a1a1a;
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+
+  
+  .testimonials-container p {
+    color: #666;
+    margin-bottom: 40px;
+  }
+  
+  .testimonials {
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap; /* Permet aux éléments de passer à la ligne sur les petits écrans */
+  }
+  
+  .testimonial {
+    background-color: #f0f4f8;
+    padding: 20px;
+    border-radius: 10px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    height: 310px;
+    width: 100%; /* Prend toute la largeur disponible */
+    max-width: 350px; /* Limite la taille maximale de la carte */
+  }
+  
+  .testimonial:nth-child(2) {
+    background-color: #e0f7f4;
+  }
+  
+  .testimonial:nth-child(3) {
+    background-color: #faf4d3;
+  }
+  
+  .testimonial img {
+    margin-top:-58px;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    border: 4px solid white;
+    top: -30px;
+    object-fit: cover; 
+  }
+  
+  .testimonial h3 {
+    margin-top: 40px;
+    font-size: 18px;
+    color: #1a1a1a;
+  }
+  
+  .testimonial p {
+    font-size: 14px;
+    color: #555;
+    margin: 15px 0;
+  }
+  
+  .stars {
+    color: #ffc107;
+    font-size: 25px;
+  }
+  
+.higlight{
+  color:red;
+}
+
+/* Ajustements pour les écrans moyens (tablettes) */
+@media (max-width: 979px) {
+  .testimonials-container{
+    padding:5px;
+  }
+
+  .testimonials {
+    justify-content: center; /* Centre les éléments sur les petits écrans */
+  }
+
+  .testimonial {
+    width: 100%; /* Prend toute la largeur sur des écrans plus petits */
+    max-width: 90%; /* Limite la taille sur les petits écrans */
+    margin-bottom: 20px; /* Ajoute un espacement entre les éléments */
+  }
+}
+
+@media (max-width: 979px){
+  .testimonials{
+    width:98%;
+  }
+}
